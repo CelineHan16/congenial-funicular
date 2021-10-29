@@ -1,0 +1,26 @@
+.message {
+  background-color: rgb(59, 59, 252);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  min-width: 250px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  
+  gap: 20px;
+}
+.message-sent {
+  border-bottom-left-radius: 0;
+  margin-right: 20%;
+  align-self: flex-start;
+}
+.message-received {
+  border-bottom-right-radius: 0;
+  margin-left: 20%;
+  align-self: flex-end;
+  background-color: violet;
+}
