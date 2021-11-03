@@ -29,20 +29,39 @@ tr:first-child {
 .button-to-top {
   background-color: tomato;
   color: white; 
-  border-radius: 50%;
   position: sticky;
   bottom: 30px;
   left: 30px;
   padding: 10px;
   font-size: 25px;
-  width: 50px;
+  border-radius: 50%;
 }
 div {
   position: sticky;
   bottom: 30px;
   right: 0;
-
+  background-color: rgb(175, 68, 49);
+  display: inline-block;
+  padding: 13px 3px;
+  border-radius: 30px;
 }
 div a {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 50%;
   
+}
+div a#number {
+  background-color: rgb(175, 68, 49);
+  color: white;
+  text-decoration: none;
+  width: 200px;
+  padding: 0 5px;
+  border-radius: 0;
+  font-size: 20px;
+}
+div:hover a#number {
+  display: inline;
 }
