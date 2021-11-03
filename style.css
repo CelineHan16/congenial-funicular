@@ -1,6 +1,5 @@
 body {
-  width: 60%;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .message { 
@@ -19,10 +18,14 @@ header {
 	text-align: center;
 	margin: 0 auto;
 	box-shadow: 0 0 5px 0 rgba(189, 188, 188, 0.623);
+	position: sticky;
+	top: 0;
+	background-color: white;
 }
 header a {
 	text-decoration: none;
-	font-size: larger;
+	font-size: 30px;
+	padding: 10px 10px;
 	font-weight: bolder;
 	color: black;
 }
@@ -59,7 +62,8 @@ footer {
 	border-bottom-right-radius: 10px;
 	display: flex;
 	gap: 10px;
-	
+	position: sticky;
+	bottom: 0;
 }
 footer button {
 	width: 40px;
@@ -67,7 +71,7 @@ footer button {
 	border-radius: 50%;
 	border: none;
 	background-color: rgb(151, 150, 150);
-	font-size: 40px;
+	font-size: 30px;
 	text-align: center;
 	color: white;
 	line-height: 4px;
@@ -75,7 +79,7 @@ footer button {
 footer button#sent {
 	background-color: rgb(54, 54, 250);
 	line-height: 4px;
-	
+	font-size: 20px;
 }
 footer input {
 	border: none;
