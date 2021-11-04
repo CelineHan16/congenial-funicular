@@ -1,6 +1,12 @@
+/* *{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+} */
+
 header {
   background-color: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0;
   width: 100%;
@@ -28,22 +34,16 @@ tr:first-child {
 }
 .button-to-top {
   background-color: tomato;
-  color: white; 
+  color: white;
   position: sticky;
   bottom: 30px;
   left: 30px;
-  padding: 10px;
+  padding: 12px 15px;
+  
+
   font-size: 25px;
-  border-radius: 50%;
-}
-div {
-  position: sticky;
-  bottom: 30px;
-  right: 0;
-  background-color: rgb(175, 68, 49);
-  display: inline-block;
-  padding: 13px 3px;
-  border-radius: 30px;
+  width: 50px;
+  border-radius: 50px;
 }
 div a {
   background-color: tomato;
@@ -51,9 +51,8 @@ div a {
   padding: 10px;
   font-size: 25px;
   border-radius: 50%;
-  
 }
-div a#number {
+#number {
   background-color: rgb(175, 68, 49);
   color: white;
   text-decoration: none;
@@ -62,6 +61,36 @@ div a#number {
   border-radius: 0;
   font-size: 20px;
 }
-div:hover a#number {
-  display: inline;
+
+.dropleft {
+  /* width: 1500px; */
+  width: 100%;
+  position: sticky;
+  bottom: 30px;
+  right: 0;
+  display: inline-block;
+  padding: 13px 3px;
+  border-radius: 30px;
+}
+
+.dropleft > div {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#number {
+  display: none;
+  background-color: brown;
+  padding: 17px 8px 14px 12px;
+  margin-right: -52px;
+  border-radius: 40px;
+  
+}
+
+
+
+span:hover #number {
+  display: inline-block;
 }
